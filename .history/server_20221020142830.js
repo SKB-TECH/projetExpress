@@ -7,22 +7,12 @@ const ejs = require('ejs');
 const { dirname } = require('path');
 const app = express()
 
-app.set('view engine', 'ejs');
-app.use('/css', express.static(path.resolve(__dirname, './assets/css')))
-app.use(morgan('tiny'))
+app.set('views engine', 'ejs')
+
 
 app.use('/', (req, res, next) => {
     res.render('main', { __dirname })
 })
-
-app.use('/about', (req, res, next) => {
-    res.render('about', { __dirname })
-})
-
-app.use('/contact', (req, res, next) => {
-    res.render('contact', { __dirname })
-})
-
 
 
 app.listen(4000, () => {

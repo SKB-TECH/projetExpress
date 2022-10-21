@@ -23,8 +23,6 @@ app.use('/contact', (req, res, next) => {
     res.render('contact', { __dirname })
 })
 
-
-
 app.listen(4000, () => {
     console.log("Serveur lancer deja au port 4000");
 })

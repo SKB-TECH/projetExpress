@@ -9,7 +9,6 @@ const app = express()
 
 app.set('view engine', 'ejs');
 app.use('/css', express.static(path.resolve(__dirname, './assets/css')))
-app.use(morgan('tiny'))
 
 app.use('/', (req, res, next) => {
     res.render('main', { __dirname })
@@ -22,8 +21,6 @@ app.use('/about', (req, res, next) => {
 app.use('/contact', (req, res, next) => {
     res.render('contact', { __dirname })
 })
-
-
 
 app.listen(4000, () => {
     console.log("Serveur lancer deja au port 4000");
