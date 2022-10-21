@@ -4,7 +4,7 @@ const path = require('path')
 const router = require('./routes/router')
 const ejs = require('ejs');
 const { dirname } = require('path');
-const app = express()
+const app=expres
 /**
     - quelques middlewares pour specification des dossiers 
     - specification du moteur de visualisation utilise

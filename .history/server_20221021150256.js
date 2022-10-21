@@ -2,9 +2,13 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path')
 const router = require('./routes/router')
+const bodyParse = require('body-parser')
 const ejs = require('ejs');
 const { dirname } = require('path');
 const app = express()
+
+
+
 /**
     - quelques middlewares pour specification des dossiers 
     - specification du moteur de visualisation utilise

@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 500px;
+    padding: 5px;
+    background-color: blue;
+    color: antiquewhite;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    gap: 10px;
+    color: ffffff;
+}
+
+a {
+    text-decoration: none;
+}
